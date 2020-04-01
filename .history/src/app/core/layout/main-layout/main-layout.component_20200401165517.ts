@@ -9,7 +9,7 @@ export class MainLayoutComponent implements OnInit {
   constructor(private viewContainerRef: ViewContainerRef, private cfr: ComponentFactoryResolver) {}
 
   ngOnInit(): void {}
-  async getHome() {
+  async gethome() {
     this.viewContainerRef.clear();
     const { HomeComponent } = await import('../home/home.component');
     this.viewContainerRef.createComponent(this.cfr.resolveComponentFactory(HomeComponent));
