@@ -9,8 +9,4 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
-
-  onKey(event: any) {
-    this.inputValue = event.target.value;
-  }
 }

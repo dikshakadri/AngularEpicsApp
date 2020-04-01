@@ -1,0 +1,6 @@
+<h3> This is Home Component</h3>
+
+
+<mat-label>Enter number to see the difference</mat-label>
+<input type="text" (keyup)="onKey($event)" />
+{{inputValue | numberSuffix}}

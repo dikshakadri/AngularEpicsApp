@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NumberSuffixPipe } from '../../number-suffix.pipe';
 @Component({
   selector: 'my-org-home',
   templateUrl: './home.component.html',
@@ -9,8 +10,4 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
-
-  onKey(event: any) {
-    this.inputValue = event.target.value;
-  }
 }
