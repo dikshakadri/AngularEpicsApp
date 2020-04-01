@@ -7,10 +7,6 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./feature/home/home.module').then(m => m.HomeModule)
   },
-  {
-    path: 'admin',
-    loadChildren: () => import('./feature/admin/admin.module').then(m => m.AdminModule)
-  },
   { path: '**', redirectTo: 'home' }
 ];
 
